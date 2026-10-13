@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+    --font-saira: 'Saira', sans-serif;
+}
+
+body {
+    @apply flex flex-col w-screen gap-10 h-fit px-24 py-10;
+}
+
+.page-title {
+    @apply font-bold text-black/60 text-4xl;
+}
+
+.converter {
+    @apply w-full rounded-xl grid grid-cols-2 gap-6 content-between border border-black/60 p-6;
+}
+
+.fields {
+    @apply flex justify-between w-full border rounded-xl border-black/60;
+}
+
+.value {
+    @apply w-full p-2;
+}
+
+.moeda {
+    @apply text-end border-l border-black/60 pl-2;
+}
+
+.coins {
+    @apply flex flex-col gap-2;
+}
+
+.coin-title {
+    @apply indent-8 font-saira text-xl text-black/60 font-semibold;
+}
